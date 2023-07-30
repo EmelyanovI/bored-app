@@ -17,7 +17,7 @@ const initApp = () => {
 initApp();
 
 const getInet = () => {
-    fetch('http://www.boredapi.com/api/activity')
+    fetch('http://www.boredapi.com/api/activity/')
         .then((response) => {
             if (response.ok) {
                 return response.json();
@@ -35,7 +35,7 @@ const getInet = () => {
 
 function renderNewStyles() {
     titleNode.textContent = `${GO_PRESS}`;
-    fetch("https://raw.githubusercontent.com/ghosh/uiGradients/master/gradients.json")
+    fetch('https://raw.githubusercontent.com/ghosh/uiGradients/master/gradients.json/')
         .then(response => response.json())
         .then(colorSet => {
             let randomColorIndex = Math.floor(Math.random() * colorSet.length);
