@@ -1,4 +1,3 @@
-const bodyNode = document.querySelector('#body-js');
 const titleNode = document.querySelector('.bored__title-js');
 const textNode = document.querySelector('.bored__text-js');
 const btnBoredNode = document.querySelector('.bored__btn-js');
