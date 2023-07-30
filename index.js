@@ -35,7 +35,7 @@ const getInet = () => {
 
 function renderNewStyles() {
     titleNode.textContent = `${GO_PRESS}`;
-    fetch('https://raw.githubusercontent.com/ghosh/uiGradients/master/gradients.json/')
+    fetch('https://raw.githubusercontent.com/ghosh/uiGradients/master/gradients.json')
         .then(response => response.json())
         .then(colorSet => {
             let randomColorIndex = Math.floor(Math.random() * colorSet.length);
