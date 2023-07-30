@@ -17,7 +17,7 @@ const initApp = () => {
 initApp();
 
 const getInet = () => {
-    fetch('http://www.boredapi.com/api/activity/')
+    fetch('https://www.boredapi.com/api/activity/')
         .then((response) => {
             if (response.ok) {
                 return response.json();
